@@ -1,0 +1,91 @@
+body {
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #07d7f7;
+}
+
+#description{
+    font-style: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#survey-form{
+    display: initial;
+    width: 400px;
+}
+
+.form-group {
+    padding: 20px;
+    background-color: #edf2f4;
+    border: 3px solid #000000;
+}
+
+.wrapper {
+    padding: 25px;
+    
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+.labels {
+    display: inline-block;
+    width: 100%;
+    font-size:25px;
+    font-style: bold;
+}
+
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+}
+
+.dev {
+    display: inline-block;
+    width: 50%;
+    font-size:20px;
+    font-style: bold;
+}
+
+.container1:hover input ~ .checked {
+    background-color: #ccc;
+}
+
+.container1 input:checked ~ .checked {
+    background-color: #2196F3;
+}
+
+.container1 .checked:after {
+    top: 8px;
+    left: 8px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}

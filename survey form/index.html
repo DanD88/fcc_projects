@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <h1 class="text-center" id="title">Survey Form</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, reiciendis, temporibus cumque
+        dicta quos aspernatur</p>
+
+    <div class="wrapper container">
+        <form id="survey-form" action="GET">
+            <div class="form-group border border-dark rounded">
+                <div class="labels">
+                    <label for="name" id="name-label" class="mt-2">Name:</label>
+                </div>
+                <div class="right-tab">
+                    <input class="form-control mt-2" name="name" id="name" type="text" placeholder="Enter Name">
+                </div>
+
+                <div class="labels">
+                    <label for="email" id="email-label" class="mt-2">Email:</label>
+                </div>
+                <div class="right-tab">
+                    <input type="email" class="form-control mt-2" name="email" id="email" placeholder="Enter Email">
+                </div>
+
+                <div class="labels">
+                    <label for="number" id="number-label" class="mt-2">Age:</label>
+                </div>
+                <div class="right-tab">
+                    <input class="form-control mt-2" type="number" name="number" id="number" min="1" max="125"
+                        placeholder="age">
+                </div>
+
+                <div class="labels">
+                    <label for="dropdown" class="mt-2">Dropdown Question:</label>
+                </div>
+                <div class="right-tab">
+                    <select class="form-control mt-2" name="question" id="dropdown">
+                        <option value="question2">Question 1</option>
+                        <option value="question3">Question 2</option>
+                        <option value="question4">Question 3</option>
+                    </select>
+                </div>
+                <br>
+                <div class="labels">
+                    <label>Select One:</label>
+                </div>
+                <div class="right-tab">
+                    <label class="container1" for="male"> Male:
+                        <input type="radio" id="male" name="gender" value="male">
+                        <span class="checked"></span><br>
+                    </label>
+                    <label class="container1"> Female:
+                        <input type="radio" name="gender" value="female">
+                        <span class="checked"></span>
+                    </label>
+                    <label class="container1"> Other:
+                        <input type="radio" name="gender" value="other">
+                        <span class="checked"></span>
+                    </label>
+                </div>
+                <div class="labels">
+                    <label>What do you want to learn in web development?</label>
+                </div>
+                <div class="right-tab">
+                    <ul>
+                        <li class="dev">
+                            <label for="checkbox1" class="checks"><input class="user form-check-input" id="checkbox1"
+                                    type="checkbox" value="1">Front-end Development</label></li>
+                    </ul>
+                </div>
+                <div class="right-tab">
+                    <ul>
+                        <li class="dev">
+                            <label for="checkbox2" class="checks"><input class="user form-check-input" id="checkbox2"
+                                    type="checkbox" value="2">Back-end Development</label></li>
+                    </ul>
+                </div>
+                <div class="right-tab">
+                    <ul>
+                        <li class="dev">
+                            <label for="checkbox3" class="checks"><input class="user form-check-input" id="checkbox3"
+                                    type="checkbox" value="3">Cyber Security</label></li>
+                    </ul>
+                </div>
+                <div class="right-tab">
+                    <ul>
+                        <li class="dev">
+                            <label for="checkbox4" class="checks"><input class="user form-check-input" id="checkbox4"
+                                    type="checkbox" value="4">App Development</label></li>
+                    </ul>
+                </div>
+                <div class="right-tab">
+                    <ul>
+                        <li class="dev">
+                            <label for="checkbox5" class="checks"><input class="user form-check-input" id="checkbox5"
+                                    type="checkbox" value="5">Other</label></li>
+                    </ul>
+                </div>
+                <div class="comment">
+                    <label class="labels">
+                        If you have questions please ask below.
+                    </label>
+                    <textarea name="comments" id="comment" cols="50" rows="10"
+                        placeholder="Enter your questions here....."></textarea>
+                </div>
+                <button id="submit" type="submit" class="btn btn-primary mt-4">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
